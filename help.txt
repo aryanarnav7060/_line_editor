@@ -1,1 +1,74 @@
+SIMPLE LINE EDITOR IN C — HELP FILE
 
+1. ABOUT THE PROGRAM
+This is a command-line line editor developed using the C programming language. It allows users to create and manage a text document line by line.
+
+2. AVAILABLE COMMANDS
+
+help
+Displays the list of available commands.
+
+insert <n>
+Inserts a new line at position n.
+Example: insert 1
+The program prompts the user to enter the text.
+
+delete <n>
+Deletes the line at position n.
+Example: delete 2
+
+display
+Displays all lines currently stored in the document.
+
+save <file>
+Saves the current document to a text file.
+Example: save document.txt
+
+load <file>
+Loads the contents of a text file into the document.
+Example: load document.txt
+
+search <word>
+Searches for a word or substring in the document.
+Example: search Hello
+
+replace <old> <new>
+Replaces occurrences of the specified text.
+Example: replace Hello Hi
+
+undo
+Restores the document to its previous state after a supported modification.
+
+count
+Displays the number of lines and words in the document.
+
+quit
+Exits the program.
+
+3. IMPORTANT NOTES
+- Enter commands exactly as shown.
+- Line positions start from 1.
+- The document can store a maximum of 100 lines.
+- Each line can hold up to 199 characters plus the terminating null character.
+- File operations require a valid filename and accessible file path.
+- Search and replacement arguments cannot contain spaces in the current command interface.
+
+4. EXAMPLE SESSION
+
+insert 1
+Enter text: Hello World
+
+insert 2
+Enter text: Activity 7
+
+display
+
+search Hello
+
+count
+
+save document.txt
+
+quit
+
+END OF HELP FILE
